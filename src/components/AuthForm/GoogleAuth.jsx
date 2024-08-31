@@ -13,6 +13,7 @@ const GoogleAuth = ({prefix}) => {
     try{
       const newUser = await signInWithGoogle();
       if(!newUser && error){
+        console.log(error.message)
         showToast("Error", error.message, "error");
         return;
       }

@@ -18,7 +18,6 @@ const PostFooter = ({ post, isProfilePage, creatorProfile }) => {
 	const handleSubmitComment = async () => {
 		await handlePostComment(post.id, comment);
 		setComment("");
-		console.log(likes)
 	};
 
 	return (
